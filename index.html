@@ -460,14 +460,21 @@
             <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
             <form class="modal-form">
                 <label class="modal-form-label">Имя
-                    <input type="text" name="user-name" class="modal-form-input  ">
+                    <input type="text" name="user-name" class="modal-form-input" required minlength="2">
                 </label>
                 <label class="modal-form-label">Телефон
-                    <input type="tel" name="user-phone" class="modal-form-input  ">
+                    <input type="tel" name="user-phone" class="modal-form-input" required>
                 </label>
                 <label class="modal-form-label">Почта
-                    <input type="email" name="user-email" class="modal-form-input  ">
+                    <input type="email" name="user-email" class="modal-form-input">
                 </label>
+                <label class="modal-form-label">Комментарий
+                    <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+                </label>
+                <input type="checkbox" class="modal-form-license-box" name="licensebox">
+                <label class="modal-form-license-text" for="">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+                        договора</a> </label>
+                <button type="submit" class="modal-form-buton">Отправить</button>
             </form>
         </div>
     </div>
