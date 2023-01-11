@@ -687,6 +687,7 @@ pointer-events: none;
     border: 1px solid #212121;
     border-radius: 1px;
     margin-right: 7px;
+    cursor: pointer;
 }
 .modal-form-license-box:checked + .modal-form-license-text::before{
     background-image: url(/images/icon-check.svg);
@@ -694,5 +695,12 @@ pointer-events: none;
     border-color: var(--accent-color);
     background-color: var(--accent-color);
     border-radius: 1px;
+}
+.modal-form-license-link {
+    text-decoration-line: underline;
+    color: #2196F3;
+}
+.modal-form-button {
+    align-self: center;
 }
 /* ======= END MODAL ======= */
