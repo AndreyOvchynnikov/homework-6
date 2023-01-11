@@ -460,34 +460,36 @@
             <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
             <form class="modal-form">
                 <label class="modal-form-label">Имя
-                    <div class="modal-form-label-wrapper">
+                    <span class="modal-form-label-wrapper">
                         <input type="text" name="user-name" class="modal-form-input" required minlength="2">
                         <svg class="modal-form-icon" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
                 <label class="modal-form-label">Телефон
-                    <div class="modal-form-label-wrapper">
+                    <span class="modal-form-label-wrapper">
                         <input type="tel" name="user-phone" class="modal-form-input" title="096-111-11-11" required>
                         <svg class="modal-form-icon" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
                 <label class="modal-form-label">Почта
-                    <div class="modal-form-label-wrapper">
+                    <span class="modal-form-label-wrapper">
                         <input type="email" name="user-email" class="modal-form-input">
                         <svg class="modal-form-icon" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
                 <label class="modal-form-label">Комментарий
                     <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 </label>
-                <input type="checkbox" class="modal-form-license-box" name="licensebox">
-                <label class="modal-form-license-text" for="">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+                <input type="checkbox" id="user-license" class="modal-form-license-box visually-hidden"
+                    name="licensebox">
+                <label class="modal-form-license-text" for="user-license">Соглашаюсь с рассылкой и принимаю <a
+                        href="">Условия
                         договора</a> </label>
                 <button type="submit" class="modal-form-buton">Отправить</button>
             </form>
