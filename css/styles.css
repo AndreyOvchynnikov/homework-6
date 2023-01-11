@@ -609,4 +609,33 @@ pointer-events: none;
     line-height: 1.15;
     letter-spacing: 0.03em;
 }
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+}
+.modal-form-label {
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+.modal-form-label-wrapper {
+    position: relative;
+    margin-top: 4px;
+}
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
 /* ======= END MODAL ======= */

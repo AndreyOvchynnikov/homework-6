@@ -460,13 +460,28 @@
             <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
             <form class="modal-form">
                 <label class="modal-form-label">Имя
-                    <input type="text" name="user-name" class="modal-form-input" required minlength="2">
+                    <div class="modal-form-label-wrapper">
+                        <input type="text" name="user-name" class="modal-form-input" required minlength="2">
+                        <svg class="modal-form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="modal-form-label">Телефон
-                    <input type="tel" name="user-phone" class="modal-form-input" required>
+                    <div class="modal-form-label-wrapper">
+                        <input type="tel" name="user-phone" class="modal-form-input" title="096-111-11-11" required>
+                        <svg class="modal-form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="modal-form-label">Почта
-                    <input type="email" name="user-email" class="modal-form-input">
+                    <div class="modal-form-label-wrapper">
+                        <input type="email" name="user-email" class="modal-form-input">
+                        <svg class="modal-form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="modal-form-label">Комментарий
                     <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
