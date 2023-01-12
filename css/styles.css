@@ -592,6 +592,11 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 cursor: pointer;
 align-items: center;
+transition: fill 250ms linear;
+}
+.modal-close-btn:focus,
+.modal-close-btn:hover{
+    fill: var(--accent-color);
 }
 .is-hidden{
 opacity: 0;
@@ -702,5 +707,26 @@ pointer-events: none;
 }
 .modal-form-button {
     align-self: center;
+    min-width: 200px;
+    min-height: 50px;
+    background-color: var(--accent-color); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: var(--accent-color);
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--third-color);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 250ms linear;
 }
+.modal-form-button:focus,
+.modal-form-button:hover{
+   background-color: #188CE8; 
+}
+
 /* ======= END MODAL ======= */
